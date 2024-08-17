@@ -1,0 +1,151 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.banner1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(29, 29, 29, 0.5)), url('img/32262765-uma-alta-navio-navegando-dentro-a-oceano-debaixo-uma-sombrio-ceu-gerado-por-ia-gratis-foto.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.texto {
+    color: white;
+    max-width: 90%;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+p{
+    font-size: 20px;
+}
+
+.bnt {
+    border-radius: 40px;
+    padding: 10px 40px;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    border: 0;
+    background-color: hsl(180, 100%, 50%);
+    cursor: pointer;
+    direction: none;
+    transition: .6s;
+}
+
+.bnt:hover {
+    background: hsl(180, 97%, 27%);
+}
+
+body {
+    margin: 0;
+    font-family: "Bai Jamjuree", sans-serif;
+    background-color: #000;
+    /* Para criar contraste com as imagens */
+}
+
+main {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.passo {
+    display: none;
+    text-align: center;
+}
+
+.passo.ativo {
+    display: block;
+}
+
+.imagens {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+   
+}
+
+.imagens img {
+    max-width: 100%;
+    height: auto;
+    width: 40%;
+    border-radius: 8px;
+
+}
+.opções{
+    border-radius: 40px;
+    padding: 10px 40px;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    border: 0;
+    background-color:  hsl(0, 0%, 15%);
+    cursor: pointer;
+    transition: .6s;
+    margin: 10px;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bnt-proximo {
+    border-radius: 40px;
+    padding: 10px 40px;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    border: 0;
+    background-color:  hsl(0, 0%, 15%);
+    cursor: pointer;
+    transition: .6s;
+    margin: 10px;
+    
+}
+
+.bnt-proximo:hover {
+    background: hsl(180, 98%, 17%);
+}
+
+
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .bnt {
+        padding: 10px 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .bnt {
+        padding: 8px 20px;
+    }
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+
+        <!-- Primeira Escolha -->
+        <div class="passo ativo" id="passo-0">
+            <div class="imagens">
+                <img src="img/floresta.jpg" alt="Floresta Escura">
+                <img src="img/caverna.jpg" alt="Caverna Escura">
+            </div>
+            <div class="conteudo">
+                <p>Você chega à praia da ilha e vê duas opções. Você pode seguir pela trilha que leva à floresta ou explorar a caverna próxima.</p>
+                <button class="bnt-proximo" data-proximo="1">Explorar a floresta</button>
+                <button class="bnt-proximo" data-proximo="2">Entrar na caverna</button>
+            </div>
+        </div>
+
+        <!-- Explorando a Floresta -->
+        <div class="passo" id="passo-1">
+            <div class="imagens">
+                <img src="img/floresta 2.jpg" alt="">
+            </div>
+            <p>Você adentra a floresta e logo encontra uma clareira com dois caminhos: um que leva a um lago cristalino e outro que parece levar a uma área mais escura e sombria.</p>
+            <button class="bnt-proximo" data-proximo="3">Seguir para o lago</button>
+            <button class="bnt-proximo" data-proximo="4">Explorar a área sombria</button>
+        </div>
+
+        <!-- Explorando a Caverna -->
+        <div class="passo" id="passo-2">
+            <div class="imagens">
+                <img src="img/caverna do lado de dentro.jpg" alt="">
+            </div>
+            <p>Dentro da caverna, você encontra inscrições antigas e uma bifurcação. Um caminho leva a uma sala iluminada por uma luz misteriosa, enquanto o outro parece descer para um túnel mais profundo.</p>
+            <button class="bnt-proximo" data-proximo="5">Seguir para a sala iluminada</button>
+            <button class="bnt-proximo" data-proximo="6">Descer para o túnel</button>
+        </div>
+
+        <!-- Lago Cristalino -->
+        <div class="passo" id="passo-3">
+            <div class="imagens">
+                <img src="img/lago brilhante.jpg" alt="">
+            </div>
+            <p>No lago, você encontra um barco antigo e um mapa parcialmente visível. Parece haver uma indicação para um local secreto na ilha.</p>
+            <button class="bnt-proximo" data-proximo="7">Usar o barco para explorar o lago</button>
+            <button class="bnt-proximo" data-proximo="8">Pegar o mapa e voltar</button>
+        </div>
+
+        <!-- Área Sombria -->
+        <div class="passo" id="passo-4">
+            <div class="imagens">
+                <img src="img/caverna sombria (2).jpg" alt="">
+            </div>
+            <p>Você avança pela área escura e encontra uma entrada para uma caverna subterrânea com ruínas antigas.</p>
+            <button class="bnt-proximo" data-proximo="9">Explorar as ruínas</button>
+            <button class="bnt-proximo" data-proximo="10">Retornar à clareira</button>
+        </div>
+
+        <!-- Sala Iluminada -->
+        <div class="passo" id="passo-5">
+            <div class="imagens">
+                <img src="img/sala sinistra.jpg" alt="">
+            </div>
+            <p>A sala está repleta de artefatos antigos, com um pedestal central que sustenta um artefato coberto por um tecido. Ao lado, há um túnel escuro que se estende, sugerindo um caminho ainda inexplorado.</p>
+            <button class="bnt-proximo" data-proximo="11">Examinar o artefato</button>
+            <button class="bnt-proximo" data-proximo="12">Descer para o túnel</button>
+        </div>
+
+        <!-- Túnel Profundo -->
+        <div class="passo" id="passo-6">
+            <div class="imagens">
+                <img src="img/caverna sombria.jpg" alt="">
+            </div>
+            <p>O túnel leva a uma câmara secreta com um baú trancado e algumas inscrições na parede.</p>
+            <button class="bnt-proximo" data-proximo="13">Abrir o baú</button>
+            <button class="bnt-proximo" data-proximo="14">Ler as inscrições</button>
+        </div>
+
+        <!-- Barco no Lago -->
+        <div class="passo" id="passo-7">
+            <div class="imagens">
+                <img src="img/barco no lago.jpg" alt="">
+            </div>
+            <p>Você usa o barco para explorar o lago e encontra uma pequena ilha no centro. Há uma cabana antiga e misteriosa.</p>
+            <button class="bnt-proximo" data-proximo="15">Explorar a cabana</button>
+            <button class="bnt-proximo" data-proximo="16">Voltar para a margem</button>
+        </div>
+
+        <!-- Retorno com Mapa -->
+        <div class="passo" id="passo-8">
+            <div class="imagens">
+                <img src="img/mapa.jpg" alt="">
+            </div>
+            <p>Com o mapa em mãos, você decide voltar à clareira, onde novas opções se abrem para explorar áreas que antes eram inacessíveis.</p>
+            <button class="bnt-proximo" data-proximo="22">Seguir o mapa</button>
+            <button class="bnt-proximo" data-proximo="18">Esconder o mapa e seguir adiante</button>
+        </div>
+
+        <!-- Ruínas Antigas -->
+        <div class="passo" id="passo-9">
+            <div class="imagens">
+                <img src="img/ruinas.jpg" alt="">
+            </div>
+            <p>Nas ruínas, você encontra antigos símbolos e uma passagem oculta. A passagem parece levar a uma parte inexplorada da ilha.</p>
+            <button class="bnt-proximo" data-proximo="19">Entrar na passagem oculta</button>
+            <button class="bnt-proximo" data-proximo="20">Explorar as ruínas mais a fundo</button>
+        </div>
+
+        <!-- Retorno à Clareira -->
+        <div class="passo" id="passo-10">
+            <div class="imagens">
+                <img src="img/clareira.jpg" alt="">
+            </div>
+            <p>Você retorna à clareira, mas agora com mais conhecimento sobre a ilha. Novas trilhas se revelam, levando a descobertas inesperadas.</p>
+            <button class="bnt-proximo" data-proximo="21">Seguir nova trilha</button>
+            <button class="bnt-proximo" data-proximo="22">Revisitar a caverna</button>
+        </div>
+
+
+        <div class="passo" id="passo-11">
+            <p> Ao retirar o artefato, você percebe tarde demais que ativou uma armadilha oculta. Em um instante, lâminas afiadas emergem das paredes, cortando o ar com um som mortal. Antes que você possa reagir, é atingido fatalmente, e sua jornada chega ao fim.</p>
+            <button class="bnt-proximo" data-proximo="0">Jogar Novamente</button>
+        </div>
+
+
+
+        <div class="passo" id="passo-12">
+            <div class="imagens">
+                <img src="img/caverna com tesouros.jpg" alt="">
+            </div>
+            <p>No túnel, você descobre diversos tesouros adornados com símbolos enigmáticos. Contudo, ao tocar um dos tesouros, você perde sua alma, condenando-a a um estado de profundo sofrimento.</p>
+            <button class="bnt-proximo" data-proximo="5">Sair do túnel</button>
+        </div>
+
+       <!-- Dentro do Passo 13 -->
+<div class="passo" id="passo-13">
+    <div class="imagens">
+        <img src="img/Bau com orbe.jpg" alt="">
+    </div>
+    <p>Ao abrir o baú, você encontra uma rara orbe que possui o poder de conceder todas as riquezas do mundo, caso a sorte esteja ao seu lado. No entanto, se a sorte lhe faltar, você poderá ser transportado para um mundo sombrio e desconhecido.</p>
+    <button class="bnt-proximo" data-proximo="6">Sair do túnel</button>
+    <button class="opções" id="pegar-orbe">Pegar Orbe</button>
+
+    <div class="resultado-orbe" id="resultado-orbe" style="display:none;">
+        <p id="mensagem-orbe"></p>
+        <button class="bnt-proximo" data-proximo="">Continuar</button>
+    </div>
+</div>
+        <div class="passo" id="passo-14">
+            <div class="imagens">
+                <img src="img/inscricoes na parede.jpg" alt="">
+            </div>
+            <p>Ao ler as inscrições, você descobre um caminho para sair da caverna e adquire conhecimentos valiosos sobre a ilha.</p>
+            <button class="bnt-proximo" data-proximo="16">Sair</button>
+        </div>
+    
+
+        <!-- Explorar a Cabana -->
+        <div class="passo" id="passo-15">
+            <p>Dentro da cabana, você encontra um diário antigo que revela segredos sobre a ilha e seus antigos habitantes. Isso pode mudar o curso da sua aventura.</p>
+            <button class="bnt-proximo" data-proximo="23">Ler o diário</button>
+            <button class="bnt-proximo" data-proximo="7">Voltar para o barco</button>
+        </div>
+
+        <!-- Final da Aventura -->
+        <div class="passo" id="passo-16">
+            <div class="imagens">
+                <img src="img/Explorador saindo da ilha.jpg" alt="">
+            </div>
+            <p>Você encontrou um caminho para escapar da ilha ou fez uma descoberta incrível que mudará sua vida. Sua aventura chegou ao fim, mas a história continua...</p>
+            <button class="bnt-proximo" data-proximo="0">Jogar Novamente</button>
+        </div>
+
+
+
+
+        <!-- Final para o Passo 8 -->
+<div class="passo" id="passo-22">
+    <div class="imagens">
+        <img src="img/mapa_antigo.jpg" alt="">
+    </div>
+    <p>Seguindo as indicações do mapa, você encontra uma área secreta na ilha. Lá, você descobre um antigo tesouro, há muito perdido nas lendas locais. Com o tesouro em mãos, você se torna uma lenda entre os exploradores, e sua jornada é celebrada por gerações.</p>
+    <button class="bnt-proximo" data-proximo="0">Jogar Novamente</button>
+</div>
+
+<!-- Final para o Passo 9 -->
+<div class="passo" id="passo-19">
+    <div class="imagens">
+        <img src="img/passagem_oculta.jpg" alt="">
+    </div>
+    <p>A passagem oculta leva você a um lugar esquecido pelo tempo, onde os segredos mais profundos da ilha são revelados. Você descobre a verdade por trás dos antigos símbolos e encontra uma chave que pode abrir portas para outros mundos. Sua aventura está apenas começando...</p>
+    <button class="bnt-proximo" data-proximo="0">Jogar Novamente</button>
+</div>
+
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
